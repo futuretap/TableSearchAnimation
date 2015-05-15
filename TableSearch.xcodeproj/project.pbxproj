@@ -19,6 +19,7 @@
 		53C962EF1959D0CA0099CD7D /* APLMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C962E51959D0CA0099CD7D /* APLMainTableViewController.m */; };
 		53C962F01959D0CA0099CD7D /* APLProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C962E71959D0CA0099CD7D /* APLProduct.m */; };
 		53C962F11959D0CA0099CD7D /* APLResultsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C962E91959D0CA0099CD7D /* APLResultsTableController.m */; };
+		AA5DA8D21B064E0400339C81 /* PrivateAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5DA8D11B064E0400339C81 /* PrivateAnimatedTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		53C962E81959D0CA0099CD7D /* APLResultsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLResultsTableController.h; sourceTree = "<group>"; };
 		53C962E91959D0CA0099CD7D /* APLResultsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLResultsTableController.m; sourceTree = "<group>"; };
 		53C962EB1959D0CA0099CD7D /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = TableSearch/Prefix.pch; sourceTree = "<group>"; };
+		AA5DA8D01B064E0400339C81 /* PrivateAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateAnimatedTransition.h; sourceTree = "<group>"; };
+		AA5DA8D11B064E0400339C81 /* PrivateAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateAnimatedTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				53C962E91959D0CA0099CD7D /* APLResultsTableController.m */,
 				53C962E61959D0CA0099CD7D /* APLProduct.h */,
 				53C962E71959D0CA0099CD7D /* APLProduct.m */,
+				AA5DA8D01B064E0400339C81 /* PrivateAnimatedTransition.h */,
+				AA5DA8D11B064E0400339C81 /* PrivateAnimatedTransition.m */,
 			);
 			path = TableSearch;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				53C962F11959D0CA0099CD7D /* APLResultsTableController.m in Sources */,
 				532350CB1959D2F700545CD3 /* main.m in Sources */,
 				53C962F01959D0CA0099CD7D /* APLProduct.m in Sources */,
+				AA5DA8D21B064E0400339C81 /* PrivateAnimatedTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

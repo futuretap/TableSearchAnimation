@@ -9,6 +9,7 @@
 #import "APLAppDelegate.h"
 #import "APLProduct.h"
 #import "APLMainTableViewController.h"
+#import "PrivateAnimatedTransition.h"
 
 @implementation APLAppDelegate
 
@@ -55,6 +56,7 @@
                               ];
     
     UINavigationController *navigationController = (UINavigationController *)[self.window rootViewController];
+	navigationController.delegate = self;
     // note we want the first view controller (not the visibleViewController) in case
     // we are being store from UIStateRestoration
     //
@@ -64,6 +66,12 @@
     return YES;
 }
 
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+								  animationControllerForOperation:(UINavigationControllerOperation)operation
+											   fromViewController:(UIViewController*)fromVC
+												 toViewController:(UIViewController*)toVC {
+	return [[PrivateAnimatedTransition alloc] init];
+}
 
 #pragma mark - UIStateRestoration
 

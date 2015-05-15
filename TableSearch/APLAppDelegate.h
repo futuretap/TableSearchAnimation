@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface APLAppDelegate : NSObject <UIApplicationDelegate>
+@interface APLAppDelegate : NSObject <UIApplicationDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
 
