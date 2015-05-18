@@ -19,16 +19,19 @@
 	UIViewController* toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
 	UIViewController* fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
 	
-	[[transitionContext containerView] addSubview:toViewController.view];
-	toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
+	UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+	
+	[[transitionContext containerView] addSubview:toView];
+
+	toView.frame = [transitionContext finalFrameForViewController:toViewController];
 
 	//	if (toViewController.presentedViewController) {
 //		[toViewController.view addSubview:toViewController.presentedViewController.view];
 //	}
-	toViewController.view.alpha = 0;
+	toView.alpha = 0;
 	
 	[UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-		toViewController.view.alpha = 1;
+		toView.alpha = 1;
 	} completion:^(BOOL finished) {
 		[transitionContext completeTransition:![transitionContext transitionWasCancelled]];
 	}];
